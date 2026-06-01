@@ -1,10 +1,406 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhil Syed Mohammed | Senior SRE & Data Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            opacity: 0.95;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-info a, .contact-info span {
+            color: white;
+            text-decoration: none;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+
+        .contact-info a:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Section Styles */
+        section {
+            background: white;
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin: 15px 0 10px 0;
+        }
+
+        /* Summary Section */
+        .summary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .summary h2 {
+            color: white;
+            border-bottom-color: white;
+        }
+
+        /* Experience Items */
+        .experience-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .company {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .date {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .achievements {
+            list-style-position: inside;
+            margin-left: 20px;
+        }
+
+        .achievements li {
+            margin: 8px 0;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: #f0f0f0;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Certifications & Education */
+        .cert-list, .edu-list {
+            list-style-position: inside;
+            margin-left: 20px;
+        }
+
+        .cert-list li, .edu-list li {
+            margin: 8px 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 1.8em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>I just built my first website using GitHub Pages.</p>
+    <header>
+        <div class="container header-content">
+            <h1>Adhil Syed Mohammed</h1>
+            <div class="tagline">Senior Site Reliability & Data Engineer | Platform Engineering Leader | E-Commerce & Order Systems</div>
+            <div class="contact-info">
+                <span>📞 503-875-2725</span>
+                <a href="mailto:adhilcool123@gmail.com">✉️ adhilcool123@gmail.com</a>
+                <a href="https://linkedin.com/in/adhil-syedmohammed-992b8a48" target="_blank">🔗 LinkedIn</a>
+                <a href="https://github.com/adhilcool123-lang" target="_blank">💻 GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Professional Summary -->
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p>Senior SRE & Data Engineer with 13+ years driving platform reliability, data observability, and large-scale order systems at Nike. Reduced MTTR by 40%, protected $150M+ in daily revenue, and engineered pipelines across 20+ microservices using Databricks, Splunk, Python, Kubernetes/EKS, and OpenTelemetry. Expert in SLI/SLO frameworks, incident command, chaos engineering, and translating operational data into actionable business intelligence.</p>
+        </section>
+
+        <!-- Professional Experience -->
+        <section>
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="job-title">Senior Site Reliability Engineer</div>
+                <div class="company">Nike Inc | Beaverton, OR</div>
+                <div class="date">Jan 2022 -- Present</div>
+                <ul class="achievements">
+                    <li><strong>Data Engineering & Observability:</strong> Designed Databricks-based real-time data pipelines ingesting order, inventory, and fulfillment event streams — powering analytics dashboards for 10+ business teams monitoring $150M+ in daily order volume; engineered ETL/ELT automation in Python reducing data freshness from daily batch to near-real-time and cutting manual reporting effort by 40%.</li>
+                    <li>Built enterprise observability data models in Splunk and Databricks structuring raw telemetry from 20+ microservices for anomaly detection and SLO burn rate analysis; optimized SQL queries across PostgreSQL/Oracle OMS/SAP databases — reducing critical report run times by 60%.</li>
+                    <li><strong>Order Systems & E-Commerce Platform Reliability:</strong> Engineered end-to-end reliability for Nike's global OMS — spanning Order Capture (Nike.com, SNKRS, Retail POS, B2B) through Sterling OMS, SAP ERP (SD/MM/FI/EWM), and warehouse fulfillment across 50+ global markets ensuring sub-second processing and 99.99% availability; led fraud detection, ATP checks, and idempotency controls for Heat Launch events with 10,000+ concurrent requests.</li>
+                    <li>Developed XML automation recovering ~$50M in at-risk orders stuck in OMS-to-SAP integration due to tax failures; supported L2 Operations during peak events (Black Friday, Cyber Monday) via vertical/horizontal scaling across OMS, SAP EWM, and carrier integration services.</li>
+                    <li><strong>Platform Reliability & SRE Engineering:</strong> Led high-severity incident command — reducing MTTR by 40% through structured runbooks and blameless postmortem culture; increased SLO compliance from 92% to 99.5% with automated error budget tracking via Prometheus/Grafana; engineered AWS multi-region HADR failover reducing RTO from hours to minutes.</li>
+                    <li>Deployed OpenTelemetry distributed tracing across 20+ microservices cutting P1 debug time by 35%; managed EKS clusters with Helm/GitOps/Terraform for 15+ microservices across 3 AZs; drove 15% AWS cost reduction via FinOps optimization and directed chaos engineering game days ahead of peak commerce events.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Technology Lead -- Digital Support & Product Launch</div>
+                <div class="company">Infosys (Client: Nike Inc) | Beaverton, OR</div>
+                <div class="date">Apr 2021 -- Jan 2022</div>
+                <ul class="achievements">
+                    <li>Led Digital Support across the full order lifecycle (Sterling OMS, Fulfillment, Inventory) — managing P1 incidents and reducing MTTR by 30%; served as Product Launch Lead for 100+ major Nike digital launches safeguarding $100M+ in launch-day revenue.</li>
+                    <li>Managed OMS-to-SAP integration health during launch events — monitoring Sterling-to-SAP SD/MM data flows, delivery document creation, and goods issue confirmations to ensure end-to-end order-to-ship pipeline integrity.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Senior System Engineer</div>
+                <div class="company">Cognizant Technology Solutions (Client: Nike Inc) | Beaverton, OR</div>
+                <div class="date">Apr 2017 -- Apr 2021</div>
+                <ul class="achievements">
+                    <li>Subject matter expert for IBM Sterling OMS across 50+ global markets — managing order orchestration, routing, fulfillment allocation, and inventory reservation for millions of daily transactions at 99.99% availability; programmatically reprocessed stuck transactions protecting ~$50M in revenue.</li>
+                    <li>Drove CI/CD pipeline improvements reducing release cycle time by 25% and increasing deployment frequency to daily; facilitated executive QBRs presenting SLI/SLO/SLA metrics and championed on-call rotation standards reducing page fatigue.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Senior System Engineer</div>
+                <div class="company">Cognizant Technology Solutions (Client: Nike Inc) | Chennai, India</div>
+                <div class="date">Apr 2013 -- Apr 2017</div>
+                <ul class="achievements">
+                    <li>Monitored NikeiD order processing systems end-to-end — correcting downstream SAP transmission failures and optimizing complex SQL queries across OMS/SAP databases to eliminate data bottlenecks on mission-critical Linux systems.</li>
+                    <li>Conducted postmortem RCAs and trend analysis reducing repeat order failures by 20%; implemented OMS/SAP observability improvements proactively detecting failures before customer impact.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">System Engineer</div>
+                <div class="company">Cognizant Technology Solutions (Client: Lowe's) | Chennai, India</div>
+                <div class="date">Jan 2011 -- Mar 2013</div>
+                <ul class="achievements">
+                    <li>Automated critical retail order data workflows using Shell and Visual Studio scripts — reducing manual overhead across 24/7 e-commerce and in-store order management systems.</li>
+                    <li>Managed infrastructure monitoring on Linux for high availability of order processing systems; investigated Dynatrace-triggered alerts across order management and fulfillment pipelines driving timely RCA and remediation.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Core Competencies / Skills -->
+        <section>
+            <h2>Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Data Engineering</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Pipelines</span>
+                        <span class="skill-tag">ETL/ELT Automation</span>
+                        <span class="skill-tag">SQL Optimization</span>
+                        <span class="skill-tag">Databricks</span>
+                        <span class="skill-tag">Real-Time Analytics</span>
+                        <span class="skill-tag">Business Intelligence</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>SRE Practices</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SLI/SLO/SLA</span>
+                        <span class="skill-tag">Error Budgets</span>
+                        <span class="skill-tag">Incident Command</span>
+                        <span class="skill-tag">Chaos Engineering</span>
+                        <span class="skill-tag">Blameless RCA</span>
+                        <span class="skill-tag">Capacity Planning</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS (EKS, EC2, S3)</span>
+                        <span class="skill-tag">Kubernetes/Docker</span>
+                        <span class="skill-tag">Terraform (IaC)</span>
+                        <span class="skill-tag">Helm/Jenkins</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">FinOps</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Observability</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Prometheus/Grafana</span>
+                        <span class="skill-tag">OpenTelemetry</span>
+                        <span class="skill-tag">Splunk</span>
+                        <span class="skill-tag">Dynatrace</span>
+                        <span class="skill-tag">SignalFx</span>
+                        <span class="skill-tag">PagerDuty</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Automation & CI/CD</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python/Go</span>
+                        <span class="skill-tag">Shell Scripting</span>
+                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">CI/CD Pipelines</span>
+                        <span class="skill-tag">GitOps</span>
+                        <span class="skill-tag">Cursor (AI-Dev)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Order Systems & ERP</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">IBM Sterling OMS</span>
+                        <span class="skill-tag">SAP SD/MM/FI/EWM</span>
+                        <span class="skill-tag">Order Orchestration</span>
+                        <span class="skill-tag">ATP Check</span>
+                        <span class="skill-tag">Fulfillment</span>
+                        <span class="skill-tag">Reverse Logistics</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section>
+            <h2>Certifications</h2>
+            <ul class="cert-list">
+                <li>Certified Kubernetes Administrator (CKA)</li>
+                <li>AWS Certified Solutions Architect -- Associate</li>
+                <li>Databricks Fundamentals</li>
+                <li>ITIL Foundation</li>
+                <li>Java Programming Certificate</li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <div class="edu-list">
+                <li><strong>Bachelor of Engineering -- Electronics & Communication Engineering</strong> | 2007 -- 2011</li>
+                <li><em>Relevant coursework: Distributed Systems, Network Infrastructure, Systems Architecture</em></li>
+            </div>
+        </section>
+
+        <!-- Databases & Additional Skills -->
+        <section>
+            <h2>Technical Proficiencies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">DocumentDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>E-Commerce</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Peak Traffic Management</span>
+                        <span class="skill-tag">Inventory Management</span>
+                        <span class="skill-tag">Payment Gateway Integration</span>
+                        <span class="skill-tag">Fraud Detection</span>
+                        <span class="skill-tag">Carrier Integration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Adhil Syed Mohammed | Senior Site Reliability & Data Engineer</p>
+    </footer>
 </body>
 </html>
